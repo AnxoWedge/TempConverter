@@ -1,0 +1,63 @@
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+#product {
+    
+    display:flex;
+    flex-flow: column;
+}
+
+.edit{
+    background-color: #ff0;
+}
+
+.delete{
+    background-color: #f00;
+}
+
+
+/*
+#price {
+    max-width:100px;
+    display: inline-block;
+}
+*/
+div.boxR{
+    display: flex;
+    flex-flow: row  wrap;
+    height: 500px;
+    width: 500px;
+}
+div.boxR ul li{
+    flex: 1 1 100%;
+    margin: 1em;
+
+}
+
+div.boxL{
+    display: flex;
+}
+
+ul {
+    margin: 0 auto;
+}
+
+
+#invoice{
+    clear: both;
+    float: left;
+    margin: 0 auto;
+}
+
+div.btns{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+div.btns > *{
+    list-style: none;
+}

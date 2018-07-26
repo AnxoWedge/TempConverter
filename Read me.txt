@@ -1,0 +1,10 @@
+eeek Mudei as coisas á ultima hora, e por isso peço desculpa pelo o atrasado do envio.
+
+Na pasta deprecated existem os meus primeiros html e a primeiro design que tentei reutilizar porem não ia dar o que eu queria. 
+Uma das parte que tenho de aprender melhor nesta aventura não é tanto o js ou css e etc, mas mesmo o design.  
+
+O explicado.html é onde pode encontrar todos os trabalhos em conjunto. 
+
+Quando em modo de responsive clique no meu logo no footer para abrir o menu! eu queria adicionar esta nota mas já estava a explodir com tudo. 
+
+Mais uma vez, Obrigado pela sua disponibilidade. Alguma duvida no meu trabalho é só perguntar no slack!

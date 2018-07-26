@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*END OF RESET*/
+
+header {
+    background-image: url(../pics/milkyway.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header .container {
+    display: inline-block;
+    text-align: center;
+    padding: 24% 20%;
+}
+
+header .container .maintext h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+header .container .subtext h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#section_alpha {  
+    height: 100vh;
+}
+
+#multiverso {
+    height: 100vh;
+}
+
+#multiverso .multiversoleft {
+    position: relative;
+    background-image: url(../pics/andromeda.jpg);
+    background-size: cover;
+    background-position: center;
+    float:left;
+    width: 33.33333%;
+    height: 100%;
+}
+
+.sublayer{
+    position: absolute;
+    background: rgba( 0, 0, 0, 0.4 );
+    height: 100%;
+    width: 100%;
+    
+}
+
+#multiverso .multiversoleft .text{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    
+}
+
+#multiverso .multiversoleft .text h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#multiverso .multiversoleft .text p {
+    text-align: center;
+    color: #fff;
+}
+
+#multiverso .multiversocenter {
+    float: left;
+    width:33.33333%;
+    height: 100%;
+}
+
+#multiverso .multiversocenter .cima {
+    background-image: url(../pics/flag_yellow_high.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+#multiverso .multiversocenter .cima  .text{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+
+#multiverso .multiversocenter .cima .text h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#multiverso .multiversocenter .cima .text p {
+    text-align: center;
+    color: #fff;
+}
+
+#multiverso .multiversocenter .baixo {
+    background-image: url(../pics/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50%;
+}
+
+#multiverso .multiversocenter .baixo  .text{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    
+}
+
+#multiverso .multiversocenter .baixo .text h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#multiverso .multiversocenter .baixo .text p {
+    text-align: center;
+    color: #fff;
+}
+
+
+#multiverso .multiversoright {
+    background-image: url(../pics/milkyway.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    height: 100%;
+}
+
+#multiverso .multiversoright .text{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    
+}
+
+#multiverso .multiversoright .text h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#multiverso .multiversoright .text p {
+    text-align: center;
+    color: #fff;
+}
+
+#section_beta {
+    text-align: center;
+}
+
+#section_beta .subsection {
+    display: inline-block;
+    margin: 30% auto;
+    text-align: center;
+}
+
+#section_beta .container {
+    text-align: center;
+}
+
+
+#section_beta .container .subcontainer h2 {
+    color: #000;
+    font-size: 42px;
+}
+
+#section_beta .btn {
+    display: inline-block;
+    background: #191919;
+    border: 4px solid #efefef;
+    transition: background 2s;
+    padding: 8px;
+    border-radius: 40px;
+    margin-top: 20px;
+    
+}
+
+#section_beta a {
+    color: #fff;    
+}
+
+#section_beta .btn:hover {
+    background: #ed4242;
+}
+
+
+footer{
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    
+}
+.Masternavigator .Mainlogo {
+    float: left;
+    width: 33.333%;
+    padding: 20px 0px 20px 0px;
+}
+
+.Masternavigator nav {
+    float: left;
+    width: 33.333%;
+}
+
+
+.Masternavigator nav ul {
+    margin: 20px;
+    text-align: center;
+}
+
+.Masternavigator nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+.Masternavigator .credit {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    padding: 20px 0px 20px 0px;
+    width: 30%;
+}
+    
+/*separadores*/
+
+.lineinfantry {
+    height: 10px;
+    width: 100%;
+    background: #fff;
+}
+
+.box {  
+    margin: 150px;
+    background: url(https://www.sobrevivaemsaopaulo.com.br/wp-content/uploads/2017/09/foto-mala-de-aventuras_sobreviva-em-s%C3%A3o-paulo.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#section_omega{
+    height: 100vh;
+    text-align: center;
+}

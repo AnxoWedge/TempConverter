@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Horizons, New Preceptions</title>
+    <link rel="stylesheet" type="text/css" href="css/explain.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Josefin+Slab&amp;subset=latin-ext" rel="stylesheet">
+</head>
+    <body>
+        <main>
+        <header>
+            <div class="header_text">
+                <small>the irrelevant</small>
+                <h1>Greatest best tutorial</h1>
+                <hr>
+                <p>How to build a temperature converter</p>
+            </div>
+        </header>
+        <section id="alpha" class="_alpha show">
+            <article>
+                <div>
+                    <div>
+                    <h3>O Html</h3>
+                    <p class="spacious">Quantas vezes é que já não olhou para as temperaturas dos EUA e fico estupefacto de ver 100º nos mapas deles? Bem, também ficam eles quando vêem as nossas temperaturas tão baixas, mas acabam por ser as mesmas temperaturas pois o que mudou foi as unidades de medida.
+                         É por isto que estamos aqui hoje, vamos o usar o nosso melhor amigo, o JavaScript, para nos dizer as temperaturas Fahrenheit em Celsius e vice-versa!
+                        <br> Como devem adivinhar, o primeiro html! Precisamos de uma estrutura básica para montarmos o nosso conversor em cima. E do que precisamos? Primeiro de um container
+                        ao que dei uma class ".boxL", e logo de seguida um < form > com todos os inputs que iram precisar: um Input com type="number" e um id "numx" para o utilizador apenas inserir numeros, 
+                        introduzi mais uma div para conter o radio num bloco, e, claro, dentro dessa div introduzi os inputs radio com a class ".temp", os ids, embora irrelevantes para esta maneira, respectivos às unidades de medida e também os valores como "C" e "F"; Por fim, um input submit com um id "btnsub" e, fora do form já, mais uma div "boxR" onde iremos meter o resultado.</p>
+                    </div>
+                        <img src="pics/html.png" alt="">
+                </div>
+            </article>
+            <article class="middlecard">
+                    <div>
+                        <div>
+                        <h3>As variáveis</h3>
+                        <p class="spacious">Podiamos agora dar uma vista de olhos ao CSS, porém o estilo é algo irrelevante para este tutorial, por isso deixo o css ao vosso critério!<br>
+                        Em vez de css, vamos saltar para o que realmente importa! Já temos o html, logo mais vale revermos os ids e as classes que precisamos: os ids #numx e #btnsub, as classes .boxR e .temp . 
+                        Agora que já temos uma pequena lista dos ids e classes que precisamos, criemos as variaveis em JavaScript! Deixo, outra vez, ao vosso critério de como querem criar as vossas variaveis ( getElementBy ou querySelector)
+                        porém quando forem chamar o radio, este terá de ser uma lista! Criamos também mais duas variaveis não definidas por agora: fahrenheitTemperature e celsiusTemperature. Estas são as variaveis que nos darão o resultado final logo tocaremos nelas mais tarde. </p>
+                        </div>
+                        <img src="pics/variaveis.png" alt="">
+                    </div>
+                </article>
+            <article >
+                <div>
+                    <div><h3>O "Event Listener"</h3>
+                    <div class="spacious">
+                        <p><span>Esta uma parte mais fácil de perceber na minha opinião, descontraia... Ora bem o que nós queremos fazer ? Queremos que algo aconteça quando o utilizador clique em submeter! 
+                            Por isso teremos que adicionar um evento que esteja à escuta desse mesmo clique! Hmm... "evento" e "à escuta". e se traduzimos para inglês? "Event" e "Listener".
+                            Basta chamar a nossa variavel que simboliza o botão submit, introduzir este metodo que pede por 3 parametros: <code>btnsub.addEventListener("click", function(){}, false);</code><br>
+                            O primeiro parametro pergunta como o evento irá disparar, neste caso queremos que um clique seja o suficiente. O segundo parametro será a função que nós queremos executar quando o clique acontece! O terceiro parametro é como é que ele está a ouvir o clique e a ordem de execução,
+                            porém deixemos este como está, que é o default. 
+
+                        </span>
+                        <br>
+                        <span>Neste caso, acrescentei a função "eventerino", eu sei que sou criativo com nomes muito obrigado, e criei-a logo a seguir. Com o parâmetro "e" de evento, adicionamos o <code>e.preventDefault()</code> para prevenir eventuais atualizações à página ao clicar no botão.
+                        também chamei uma nova função denominada de "max" com o parametro "a", que é o meu input#numx... eu sei, tenho que arranjar nomes melhores... </span>
+                        </p>
+                    </div>
+                    </div>
+                    <img src="pics/event.png" alt="">
+                </div>
+            </article>
+            <article class="middlecard">
+                <div>
+                    <div>
+                    <h3>A Função</h3>
+                    <p class="spacious">Esta parte é capaz de ser um pouco mais dificil de perceber mas vamos lá!<br>
+                    Ao criar esta função temos de criar um loop logo de seguida! Porquê? Temos um input radio, com duas opções, logo temos de circular entre eles para ver qual deles está "checked". Se o radio tiver "checked" então executamos um switch, em função do valor que ele encontrar, ou seja, "C" ou "F".
+                    Os dois casos são muito similares, igualamos as variaveis que não estam definidas que criámos no inicio à respectiva formula que pretendemos, utilizando o "a.value" para introduzir o valor que o utilizador escreveu no nosso input#numx.
+                    Com o resultado na mão, basta introduzir a seguinte a temperatura no innerHtml da div.boxR . <br>
+                    O resultado deste código deverá ser similar ao conversor que se encontra em baixo. Espero que vocês tenham gostado, e melhor, aprendido algo com o meu pequeno tutorial. E lembrem-se, não façam igual, façam melhor! :) </p>
+                    </div>
+                    <img src="pics/function.png" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="tiny_box">
+                    <div>
+                        <span>Insira a temperatura que pretende converter</span>
+                        <hr>
+                    </div>
+                    <div class="boxL">
+                        <form>
+                            <label for="formx">Temperatura
+                            <input id="numxA" type="number" name="a" value="0">
+                            </label>
+                            <div>
+                            <label class="container">ºC
+                            <input id="celsius" class="temp" type="radio" name="unit" value="C">
+                            </label>
+                            <label class="container">ºF
+                            <input id="farenheit" class="temp" type="radio" name="unit" value="F">
+                            </label>
+                            </div>
+                            <input id="btnsubA" type="submit">
+                        </form>
+                    </div>
+                    <div class="boxR"></div>
+                </div>
+            </article>
+        </section>
+        <section id="beta" class="_alpha">
+            <article>
+                <div class="tiny_box">
+                    <div class="boxL">
+                        <form>
+                            <label for="numx">Numero X</label>
+                            <input id="numx" type="text" name="numx" value=" ">
+                            <label for="numy">Numero Y</label>
+                            <input id="numy" type="text" name="numy" value=" ">
+                            <button id="btnsub">Submit</button>
+                        </form>
+                    </div>
+                    <div class="boxR"><div id="return"></div></div>
+                </div>
+            </article>
+        </section>
+        <section id="omega" class="_alpha">
+            <article>
+                <div class="tiny_box">
+                    <div class="boxL">
+                        <form>
+                        <label for="formx">Escreva o seu numero:
+                        <input id="numxB" type="number" name="a" value=" ">
+                        </label>
+                        <input id="btnsubB" type="submit">
+                        </form>
+                    </div>
+                    <div class="boxR"><div id="returnB"></div></div>
+                </div>
+            </article>
+        </section>
+        <section id="lambda" class="_alpha">
+           <div class="forms">
+                <div class="tiny_box">
+                    <div class="boxL">
+                          <ul class="lista_artigos">
+                              <li>Exemplo de artigo</li>
+                          </ul>
+                          <div id="btn-new">
+                              <button href="#" id="showForm">New item</button>
+                          </div>
+                          <form id="new-form">
+                              <div id="artigo">
+                                  <input type="text" id="prodName" placeholder="Add product..." />
+                                  <input type="number" id="prodPrice" placeholder="Insert the price..."/>
+                              </div>
+                              <input type="button" id="addbtn" value="add" />
+                          </form>
+                      </div>
+                    <div id="boxR" class="boxR">
+                      <div>
+                          <button id="delBtn">Del</button>
+                          <button id="editBtn">Edit</button>
+                          <button id="cancelBtn" class="hide">Cancel</button>
+                      </div>
+                      <ul id="product">
+                          <!-- here goes list products || check js -->
+                      </ul>
+                  <!--    <ul id="price">
+                          <li class="price">150€</li>
+                      </ul>
+                      <div id="button" class="btns">
+                          <ul>    
+                              <li>
+                                  <button>Edit</button>
+                                  <button>Del</button>
+                              </li>
+                          </ul>-->
+                      </div>
+                    </div>
+                    <input type="button" id="invoice" value="fatura"/>
+                    <div id="faturaLista">
+                        <ul></ul>
+                    </div>
+                </div>
+            </section>
+    </main>
+        <footer id="navFooter" class="top">
+            <div class="masternavigator">
+                <div id="logo" class="mainlogo"> <img src="pics/Angelo-logo.png" alt=""> </div>
+                <nav id="navbar">
+                    <ul id="navUL">
+                        <li><a id="ex2" href="#header">Home</a></li>
+                        <li><a id="ex1" href="#">Exercicio 1</a></li>
+                        <li><a id="ex2" class="active" href="#">Exercicio 2 (Tutorial)</a></li>
+                        <li><a id="ex3" href="#">Exercicio 3</a></li>
+                        <li><a id="ex4" href="#">Exercicio 4</a></li>
+                    </ul>
+                </nav>
+                <div class="credit"><p>&copy; 2018 Designed by Ângelo</p></div>
+            </div>
+        </footer>
+    
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/e1.js"></script>
+    <script src="JS/e2.js"></script>
+    <script src="JS/e3.js"></script>
+    <script src="JS/e4.js"></script>
+    <script src="JS/scrollnav.js"></script>
+    </body>
+</html>

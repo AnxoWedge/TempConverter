@@ -1,0 +1,437 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*END OF RESET*/
+
+body{
+    width: 100%;
+    font-size: 0.9em;
+}
+
+h1, h2, h3, h4, p, span{
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+@media screen and ( min-width:650px){
+    img{
+        display: block;    
+        height: 18.75em;
+        /*max-width: 31.25em;*/
+        object-fit: contain;
+    }
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+cite{
+    font-size: 2em;
+    color: rgba(205,205,205,1);
+    
+}
+
+header{
+    flex: 1 1 auto;
+    margin: 3em auto;
+    padding-top: 1em;
+    width: 100%;
+    box-shadow: 0px 13px 15px -6px rgba(0, 0, 0, 0.411);
+}
+
+header div.header_text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:  0 0 2em;
+}
+header div.header_text small{
+    color: #858585;
+    font-size: 0.875em;
+}
+header div.header_text h1{
+    font-size: 2em;
+}
+
+header div.header_text p{
+    font-size: 1em;
+}
+
+section._alpha {
+    display: none;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    margin-bottom: 3.75em;
+}
+section.show{
+    display: flex;
+}
+
+section._alpha article{
+    flex: 1 1 auto;
+    padding: 2em;
+    transition: all 0.5s;
+    
+}
+section._alpha article:hover{
+    color: #fff;
+    background:#335e43;
+
+    
+}
+section._alpha article.middlecard:hover{
+    color: #fff;
+    background:#335e43;
+
+    
+}
+section._alpha article div.tiny_box:hover{
+    color: #fff;
+    background:#335e43;
+
+    
+}
+section._alpha article div.tiny_box>div.boxL{
+    color: #858585;
+    
+}
+section._alpha article>div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section._alpha article .spacious{
+    margin: 2em auto;
+    line-height: 1.45em;
+}
+
+section._alpha article div.tiny_box{
+    background: #f0f0f0;
+    height: 30em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s;
+}
+section._alpha article div.tiny_box span{
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+section._alpha article div.tiny_box>div.boxL{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section._alpha article div.tiny_box>div.boxL>form{
+    background: #fff;
+    flex:  1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section._alpha article div.tiny_box>div.boxL>form>*{ 
+    margin: 1em;
+}
+
+
+section._alpha article div.tiny_box>div.boxR{
+    flex: 1 1 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.40em;
+}
+section._alpha article div.tiny_box>span{
+    flex: 1 1 100%;
+}
+
+/* desktop*/
+@media screen and (min-width:1100px){
+
+section._alpha article .spacious{
+    margin: 2em;
+
+}
+section._alpha article>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section._alpha article.middlecard{
+    background: rgba(240, 240, 240, 1);
+}
+
+section._alpha article.middlecard>div>img{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid: span 1 / span 2;
+}
+
+section._alpha article>div>p{
+    grid-column: span 2;
+
+}
+section._alpha article>div>div{ 
+    grid-column: span 2;
+}
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5.75em;
+    transition: all 1s;   
+}
+
+footer div.masternavigator{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.75em;
+}
+footer div.masternavigator div.mainlogo{
+    flex: 1 1 auto;
+    text-align: center;
+}
+footer div.masternavigator div.mainlogo img{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+footer div.masternavigator nav ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+footer div.masternavigator nav ul.open{
+  height: 50vh;
+}
+footer.open{
+    height: 50vh;
+}
+
+
+footer div.masternavigator nav ul li a {
+    text-decoration: none;
+    color: #858585;
+    padding: 1.32em;
+    transition: all 0.3s
+}
+footer div.masternavigator nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #335e43;
+}
+
+@media screen and (min-width:1100px){
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 3.75em;
+
+}
+
+footer.top{
+    top:0;
+    left: 0;
+    transition: all 1s;
+}
+
+footer div.masternavigator{
+    flex-flow: row nowrap;
+}
+
+footer div.masternavigator div.mainlogo {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer div.masternavigator nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 100%;
+    overflow: visible;
+}
+footer div.masternavigator nav ul li{
+    flex: 1 1 auto;
+}
+
+footer div.masternavigator div.credit{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+footer div.masternavigator div.credit p {
+    flex: 1 1 auto;
+    align-self: center;
+    text-align: center;
+}
+
+}
+/*separadores*/
+
+#section_omega{
+    height: 100vh;
+    text-align: center;
+}
+
+
+/* css of apps */ 
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+#product {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.edit{
+    background-color: #ff0;
+}
+
+.delete{
+    background-color: #f00;
+}
+
+.forms{
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms div.tiny_box{
+    flex: 1 1 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". s ."
+    ". r .";
+}
+
+.forms div.tiny_box div.boxL{
+    grid-area: s;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.forms div.tiny_box div.boxR{
+    grid-area: r;
+    margin: 5em;
+    display: flex;
+    flex-flow: column;
+}
+
+.forms div.tiny_box div.boxR>div{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+#faturaLista{
+    flex: 1 1 100%;
+}
+
+/* floater*/ 
+.floater{
+    position: fixed;
+    bottom: 15%;
+    left: 45%;
+    width: 200px;
+    background-color: #000;
+}
